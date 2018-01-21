@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.soumit.materialsliders.MainActivity">
+
+    <android.support.v7.widget.AppCompatSeekBar
+        android:id="@+id/seekbar_id"
+        android:layout_margin="30dp"
+        android:isScrollContainer="true"
+        android:max="100"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        custom:theme="@style/SeekbarTheme"/>
+
+    <TextView
+        android:id="@+id/seekbar_text"
+        android:layout_below="@id/seekbar_id"
+        android:text="AppCompatSeekbar : "
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:paddingLeft="8dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/seekbar_value"
+        android:text="0"
+        android:layout_below="@+id/seekbar_id"
+        android:layout_marginLeft="180dp"
+        android:layout_marginStart="180dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+    <com.appyvet.materialrangebar.RangeBar
+        android:id="@+id/rangebar_id"
+        android:layout_below="@+id/seekbar_value"
+        android:layout_margin="30dp"
+        custom:mrb_rangeBar="false"
+        custom:mrb_tickStart="1"
+        custom:mrb_tickEnd="20"
+        custom:mrb_tickInterval="1"
+        custom:mrb_pinRadius="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="71dp" />
+
+    <TextView
+        android:id="@+id/rangebar_text"
+        android:layout_below="@id/rangebar_id"
+        android:text="Rangebar : "
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:paddingLeft="8dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/rangebar_value"
+        android:text="0"
+        android:layout_below="@+id/rangebar_id"
+        android:layout_marginLeft="120dp"
+        android:layout_marginStart="120dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.appyvet.materialrangebar.RangeBar
+        android:id="@+id/twosided_rangebar_id"
+        android:layout_below="@+id/rangebar_text"
+        android:layout_margin="30dp"
+        custom:mrb_tickStart="1"
+        custom:mrb_tickEnd="20"
+        custom:mrb_tickInterval="1"
+        custom:mrb_pinRadius="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="71dp" />
+
+    <TextView
+        android:id="@+id/twosided_rangebar_text"
+        android:layout_below="@id/twosided_rangebar_id"
+        android:text="TwoSidedRangebar : "
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:paddingLeft="8dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/rangebarleft_value"
+        android:text="0"
+        android:layout_below="@+id/twosided_rangebar_id"
+        android:layout_marginLeft="200dp"
+        android:layout_marginStart="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/rangebarright_value"
+        android:text="0"
+        android:layout_below="@+id/twosided_rangebar_id"
+        android:layout_marginLeft="230dp"
+        android:layout_marginStart="230dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+
+</RelativeLayout>
